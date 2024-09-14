@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Wagner Moreira da Silva - Currículo</title>
+</head>
+<body>
+	<script defer>
+		async function getUser() {
+			const response = await fetch('https://api.github.com/users/wagnermor');
+			const data = await response.json();
+			// console.log(data);
+
+			const header = document.querySelector('header');
+			const img = document.createElement('img');
+			img.src = data.avatar_url;
+			header.appendChild(img);
+		}
+		getUser();
+	</script>
+	<header>
+		<section>
+			<h1>
+				Wagner Moreira da Silva
+			</h1>
+			<p>Casado - 16/04/1986</p>
+			<p>Rua Moema, 135</p>
+			<p>+551197326-0000</p>
+			<p>wagnermor@outlook.com</p>
+		</section>
+	</header>
+	<main>
+		<section>
+			<h2>OBJETIVO</h2>
+			<p>Analista Backend</p>
+		</section>
+		<section>
+			<h2>FORMAÇÃO ACADÊMICA</h2>
+			Graduação Análise e Desenvolvimento de Sistemas - <a href="https://mackenzie.br">Universidade Presbiteriana Mackenzie</a>, São Paulo, SP - 2024
+		</section>
+		<section>
+			<h2>EXPERIÊNCIA PROFISSIONAL</h2>
+			<article>
+				<h3>Analista Backend</h3>
+				<p>Empresa: <a href="https://www.anjunexpress.com.br" target="_blank">Anjun Express</a></p>
+				<p>Período: Dez/2023 - Atual</p>
+				<p>Atividades: Desenvolvimento de sistemas, manutenção de sistemas, análise de sistemas, testes de sistemas.</p>
+			</article>
+			<article>
+				<h3>Java Jr Full Stack</h3>
+				<p>Empresa: <a href="https://www.carteiradoze.com.br" target="_blank">Carteira do Zé</a></p>
+				<p>Período: Dez/2020 - Dez/2023</p>
+				<p>Atividades: Desenvolvimento de sistemas, manutenção de sistemas, análise de sistemas, testes de sistemas.</p>
+			</article>
+		</section>
+		<section>
+			<h2>IDIOMAS</h2>
+		</section>
+		<section>
+			<h2>OUTROS</h2>
+		</section>
+	</main>
+    
+</body>
+</html>
